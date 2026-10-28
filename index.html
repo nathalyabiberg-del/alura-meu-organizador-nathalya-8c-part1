@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat - Organizador de Tarefas & Rotina</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes modernas do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Fundo 3D com Objetos Voando -->
+    <div class="bg-3d-container">
+        <div class="cube cube-1"></div>
+        <div class="cube cube-2"></div>
+        <div class="pyramid pyramid-1"></div>
+        <div class="sphere sphere-1"></div>
+        <div class="sphere sphere-2"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="app-container">
+        
+        <!-- Cabeçalho -->
+        <header class="main-header">
+            <h1 class="brand-title">Nat</h1>
+            <p class="brand-tagline">Sua rotina sob controle, sua mente em alta performance.</p>
+        </header>
+
+        <!-- Seção de Descrição da Página -->
+        <section class="description-section">
+            <div class="desc-card">
+                <h2>O que é o Nat?</h2>
+                <p>
+                    O <strong>Nat</strong> é um simulador inteligente de organização pessoal projetado para equilibrar suas rotinas diárias, hábitos produtivos e bem-estar mental. Combine técnicas comprovadas de gestão de tempo com foco contínuo para transformar intenção em execução fluida.
+                </p>
+            </div>
+        </section>
+
+        <!-- Grid de Cards Interativos e Explicativos -->
+        <section class="cards-grid">
+
+            <!-- Card 1 -->
+            <div class="interactive-card">
+                <div class="card-glow"></div>
+                <div class="card-icon">⚡</div>
+                <div class="card-tag">Técnica de Foco</div>
+                <h3>Blocos de Foco Profundo</h3>
+                <p class="card-summary">Trabalhe em ciclos curtos de 25 a 50 minutos sem interrupções e garanta pausas ativas.</p>
+                <div class="card-details">
+                    <hr>
+                    <h4>💡 Como aplicar no dia a dia:</h4>
+                    <ul>
+                        <li>Desative todas as notificações do celular durante o bloco.</li>
+                        <li>Escolha <strong>apenas uma</strong> tarefa prioridade por ciclo.</li>
+                        <li>Nas pausas de 5 min, seafaste da tela e caminhe um pouco.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="interactive-card">
+                <div class="card-glow"></div>
+                <div class="card-icon">🎯</div>
+                <div class="card-tag">Priorização</div>
+                <h3>Regra do 1-3-5</h3>
+                <p class="card-summary">Mantenha sua lista diária realista para evitar o cansaço mental e a sensação de fracasso.</p>
+                <div class="card-details">
+                    <hr>
+                    <h4>💡 Estrutura da sua lista:</h4>
+                    <ul>
+                        <li><strong>1</strong> Tarefa Principal (a mais importante do dia).</li>
+                        <li><strong>3</strong> Tarefas Médias (de impacto moderado).</li>
+                        <li><strong>5</strong> Tarefas Pequenas (rápidas de resolver).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="interactive-card">
+                <div class="card-glow"></div>
+                <div class="card-icon">🌙</div>
+                <div class="card-tag">Rotina Noturna</div>
+                <h3>Encerramento Intencional</h3>
+                <p class="card-summary">Prepare o seu dia seguinte antes de dormir para acordar com clareza e sem ansiedade.</p>
+                <div class="card-details">
+                    <hr>
+                    <h4>💡 Checklist Noturno:</h4>
+                    <ul>
+                        <li>Anote as 3 principais metas do dia seguinte.</li>
+                        <li>Desconecte das telas 45 minutos antes de deitar.</li>
+                        <li>Deixe o ambiente organizado para a manhã seguinte.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="interactive-card">
+                <div class="card-glow"></div>
+                <div class="card-icon">🔥</div>
+                <div class="card-tag">Consistência</div>
+                <h3>Ancoragem de Hábitos</h3>
+                <p class="card-summary">Conecte um hábito novo a uma rotina automática que você já pratica diariamente.</p>
+                <div class="card-details">
+                    <hr>
+                    <h4>💡 Exemplo Prático:</h4>
+                    <ul>
+                        <li><em>"Logo após tomar meu café da manhã (hábito atual)..."</em></li>
+                        <li><em>"...vou rever minha lista do Nat por 2 minutos (novo hábito)."</em></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Simulador de Adição Rápida de Tarefas -->
+        <section class="simulator-section">
+            <div class="simulator-card">
+                <h3>Simulador de Tarefas Nat</h3>
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="Digite uma nova tarefa para a rotina...">
+                    <button id="addTaskBtn">Adicionar</button>
+                </div>
+                <ul class="task-list" id="taskList">
+                    <li class="task-item">
+                        <span>Revisar metas da semana no Nat</span>
+                        <span class="task-status">Concluído</span>
+                    </li>
+                    <li class="task-item">
+                        <span>Bloco de Foco: Estudo/Trabalho (45min)</span>
+                        <span class="task-status pending">Pendente</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="main-footer">
+            <p>&copy; 2026 <strong>Nat</strong> — Sistema de Organização Pessoal</p>
+        </footer>
+
+    </div>
+
+    <!-- Script de Simulação Simples -->
+    <script>
+        document.getElementById('addTaskBtn').addEventListener('click', function() {
+            const input = document.getElementById('taskInput');
+            const text = input.value.trim();
+            if (text !== '') {
+                const ul = document.getElementById('taskList');
+                const li = document.createElement('li');
+                li.className = 'task-item';
+                li.innerHTML = `<span>${text}</span><span class="task-status pending">Pendente</span>`;
+                ul.prepend(li);
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
